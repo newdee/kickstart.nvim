@@ -818,7 +818,7 @@ require('lazy').setup({
       require('mini.files').setup {
         vim.keymap.set('n', '<leader>j', function()
           MiniFiles.open()
-        end),
+        end, { desc = 'Open file browser' }),
       }
 
       -- Simple and easy statusline.
